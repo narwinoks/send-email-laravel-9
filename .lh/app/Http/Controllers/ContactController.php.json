@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/Http/Controllers/ContactController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1668319191408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1668319197165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,6 @@\n use Illuminate\\Http\\Request;\n \n class ContactController extends Controller\n {\n-    public function send(Request $request)\n+    public function send(Request $request){}\n }\n"
+                },
+                {
+                    "date": 1668319459927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n             'message' => 'required',\n         ]);\n     }\n \n-    private function online( $site= \"https\"){\n+    private function online( $site= \"https:\"){\n \n     }\n }\n"
+                }
+            ],
+            "date": 1668319191408,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Http\\Controllers;\n\nuse Illuminate\\Http\\Request;\n\nclass ContactController extends Controller\n{\n    public function send()\n}\n"
+        }
+    ]
+}

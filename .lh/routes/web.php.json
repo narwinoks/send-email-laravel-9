@@ -1,0 +1,46 @@
+{
+    "sourceFile": "routes/web.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1668310273595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1668310284407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n Route::get('/', function () {\n     return view('welcome');\n });\n \n-Route::vi\n+Route::view('contact','')\n"
+                },
+                {
+                    "date": 1668316812713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n Route::get('/', function () {\n     return view('welcome');\n });\n \n-Route::view('contact','')\n+Route::view('contact', '');\n"
+                },
+                {
+                    "date": 1668316825284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n Route::get('/', function () {\n     return view('welcome');\n });\n \n-Route::view('contact', '');\n+Route::view('contact', 'email.sen');\n"
+                },
+                {
+                    "date": 1668316834152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,5 @@\n Route::get('/', function () {\n     return view('welcome');\n });\n \n-Route::view('contact', 'email.sen');\n+Route::view('contact', 'email.send_email');\n"
+                },
+                {
+                    "date": 1668319209200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,4 +17,5 @@\n     return view('welcome');\n });\n \n Route::view('contact', 'email.send_email');\n+Route::po\n"
+                },
+                {
+                    "date": 1668319214546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n     return view('welcome');\n });\n \n Route::view('contact', 'email.send_email');\n-Route::po\n+Route::post\n"
+                },
+                {
+                    "date": 1668319220323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,5 @@\n     return view('welcome');\n });\n \n Route::view('contact', 'email.send_email');\n-Route::post('/send,')\n+Route::post('/send')\n"
+                }
+            ],
+            "date": 1668310273595,
+            "name": "Commit-0",
+            "content": "<?php\n\nuse Illuminate\\Support\\Facades\\Route;\n\n/*\n|--------------------------------------------------------------------------\n| Web Routes\n|--------------------------------------------------------------------------\n|\n| Here is where you can register web routes for your application. These\n| routes are loaded by the RouteServiceProvider within a group which\n| contains the \"web\" middleware group. Now create something great!\n|\n*/\n\nRoute::get('/', function () {\n    return view('welcome');\n});\n\nRoute::vi\n"
+        }
+    ]
+}
