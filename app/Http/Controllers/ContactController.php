@@ -24,10 +24,14 @@ class ContactController extends Controller
                 'subject' => $request->subject,
                 'body' => $request->message
             ];
+            // $test=1;
             Mail::send('email.template_email', $mail_data, function ($message) use ($mail_data) {
+                $file=asset('/pdf/contact.pdf');
                 $message->to($mail_data['recipient'])
                     ->from($mail_data['fromEmail'], $mail_data['fromName'])
-                    ->subject($mail_data['subject']);
+                    ->subject($mail_data['subject'])
+                    ->attachData($file, "text.pdf");
+                    ;
             });
             return redirect()->back()->with('success', 'Email Send!');
             // return "oke";
